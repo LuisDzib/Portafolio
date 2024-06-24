@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     background: #2193b0;
     /* fallback for old browsers */
@@ -8,13 +13,30 @@ body {
 
 }
 
+.blur-background {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: rgba(200, 200, 200, 0.265);
+    backdrop-filter: blur(6px);
+    border-radius: 1.5rem;
+}
+
+.text-bold-title {
+    font-weight: 400;
+}
+
 .text-justify {
     text-align: justify;
 }
 
-.icon-size {
-    width: 20px;
-    height: auto;
+.social-icon {
+    border: none;
+    background-color: white;
+}
+
+.social-icon:hover {
+    background-color: rgb(27, 53, 70);
+    color: white;
+    transition: 0.5s;
 }
 
 .icon-image {
@@ -22,4 +44,14 @@ body {
     height: auto;
     align-self: center;
     margin: 1rem;
+}
+
+.card-title {
+    font-size: larger;
+}
+
+.card:hover {
+    background-color: rgb(27, 53, 70);
+    color: white;
+    transition: 0.5s;
 }
